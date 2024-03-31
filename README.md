@@ -37,3 +37,26 @@ Once deployed, you can access the API endpoints via <api_url>.
 
 ## Data Format
 The data format used for movie information is in CSV format. Data providers send updates via AWS S3, and the API is responsible for processing and storing the data perpetually.
+_____________________________________________________________________________________________
+# Terraform 
+
+### Prerequisites
+
+AWS CLI 
+Terraform 
+
+### Connect Terraform with AWS
+
+Run `aws configure` command and provide the AWS Security credentials
+
+### Initialize Terraform
+
+Clone the repository, switch to terraform directory and Run `terraform init`. This will intialize the terraform environment for you and download the modules, providers and other configuration required.
+
+### Optionally review the terraform configuration
+
+Run `terraform plan` to see the configuration it creates when executed.
+
+### Finally, Apply terraform configuation to create EKS cluster with VPC , RDS DB instance, S3 Bucket
+
+`terraform apply`
